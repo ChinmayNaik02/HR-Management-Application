@@ -1,0 +1,60 @@
+<!-- training_and_development.jsp -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training and Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Training and Development</h2>
+        <div class="button-container">
+            <button class="button" onclick="location.href='addTrainingEvent.php'">Add Events</button>
+            <button class="button" onclick="location.href='viewEditTrainingEvents.php'">View/Edit Events</button>
+            <button class="button" onclick="location.href='enrollEmployees.php'">Enroll Employees</button>
+        </div>
+    </div>
+</body>
+</html>

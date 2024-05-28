@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management - HR Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+        }
+       
+        .button:hover {
+            background-color: #45a049;
+        }
+        
+        .button1{
+        	padding: 11px 70px
+        }
+        
+        .button2{
+        	padding: 11px 44px
+        }
+        
+        .button3{
+        	padding: 10px 46px
+        }
+        
+        .button4{
+        	padding: 9px 52px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leave Management</h1>
+        
+        <div class="section">
+            <div class="section-title">Add Employee Leave</div>
+            <a href="addLeave.php" class="button button1">Add Leave</a>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Future Leaves</div>
+            <a href="futureLeaves.php" class="button button2">View Future Leaves</a>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Past Leave Records</div>
+            <a href="pastLeaves.php" class="button button3">View Past Records</a>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">All Leave Records</div>
+            <a href="allLeaves.php" class="button button4">View all Records</a>
+        </div>
+    </div>
+</body>
+</html>

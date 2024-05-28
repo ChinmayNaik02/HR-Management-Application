@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Reports - HR Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 550px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .button-container{
+            text-align: center;
+        }
+        
+        .button-container1{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            width:100;        
+        }
+        
+        .button-container1 button{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            width:100vh
+        }
+        
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .name-input {
+            width: 64%;
+			padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+       
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Reports</h1>
+        
+        <div class="button-container">
+            <a href="attendanceSummaryReport.html" class="button">Attendance Summary Report</a>
+            <form action="employeeAttendanceReport.php" method="post">
+	            <div class="button-container1">
+	                <input type="text" class="name-input" placeholder="Enter Employee Name" name="employeeName" required>
+	                <button type="submit" class="button" style="width: 60%">Employee Attendance Report</button>
+	            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
