@@ -79,12 +79,12 @@
                 echo '<div class="error-message">Login failed. Please check your username and password.</div>';
             }
         ?>
-        <form class="login-form" action="login.php" method="POST">
+        <form class="login-form" action="login/login.php" method="POST">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
-        <p class="footer">Don't have an account? <a href="signUp.php">Sign up</a></p>
+        <p class="footer">Don't have an account? <a href="login/signUP.php">Sign up</a></p>
     </div>
 </body>
 </html>

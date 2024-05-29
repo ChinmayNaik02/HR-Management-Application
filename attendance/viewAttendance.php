@@ -126,7 +126,7 @@
             ?>
         </table>
         <a href="attendance.html" class="button">Back to Attendance Management</a>
-        <a href="../login.html" class="button">Go to Dashboard</a>
+        <a href="../login/dashboard.html" class="button">Go to Dashboard</a>
     </div>
 </body>
 </html>

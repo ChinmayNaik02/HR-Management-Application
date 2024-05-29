@@ -102,26 +102,21 @@
             </tr>
             
             <?php
-            // Retrieve employee name from the request parameter
             $employeeNameParam = $_GET["employee"];
             
-            // Database connection details
             $host = "localhost";
             $username = "root";
             $password = "@VKcentury100";
             $database = "employee";
 
             try {
-                // Establishing a connection to the database
                 $conn = new PDO("mysql:host=$host;dbname=$database", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                // Creating SQL query to retrieve attendance records for the specified employee name
                 $sql = "SELECT e.EmployeeID, a.employeeName, a.date, a.clockInTime, a.clockOutTime FROM attendance a INNER JOIN employee e ON a.employeeName = e.FullName WHERE e.FullName = ?";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$employeeNameParam]);
 
-                // Displaying the attendance records
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     echo "<tr>";
                     echo "<td>" . $row['EmployeeID'] . "</td>";
@@ -132,7 +127,6 @@
                     echo "</tr>";
                 }
 
-                // Closing the database connection
                 $conn = null;
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
@@ -140,7 +134,7 @@
             ?>
         </table>
         <a href="attendance.html" class="button">Back to Attendance Management</a>
-        <a href="../login.html" class="button">Go to Dashboard</a>
+        <a href="../login/dashboard.html" class="button">Go to Dashboard</a>
     </div>
 </body>
 </html>

@@ -92,7 +92,7 @@
             }
         ?>
         <a href="employee.html" class="button">Back to Employee Management</a>
-        <a href="../dashboard.html" class="button">Go to Dashboard</a>
+        <a href="../login/dashboard.html" class="button">Go to Dashboard</a>
     </div>
 </body>
 </html>

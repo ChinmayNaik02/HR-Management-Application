@@ -117,7 +117,7 @@
             </div>
             <div class="button-container">
                 <button type="submit" class="button">Submit</button>
-                <a href="../login.html" class="button">Dashboard</a>
+                <a href="../login/dashboard.html" class="button">Dashboard</a>
                 <a href="employee.html" class="button">Employee Management</a>
             </div>
         </form>
